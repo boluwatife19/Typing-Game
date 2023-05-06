@@ -84,7 +84,6 @@ function initTyping(){
             if(characters[charIndex].innerText === typedChar){
                 characters[charIndex].classList.add("correct");
                 ara.style.background = "green";
-                backchg()
                 if(ara.style.background = "green" ){
                     setInterval(chba, 100)
                 }else{
