@@ -38,6 +38,7 @@ game = document.querySelector(".wrapper");
 mis = document.querySelector(".mis");
 ccc = document.querySelector(".ccc");
 www = document.querySelector(".www");
+ara = document.querySelector("body");
 maxt = 60;
 s = maxt;
 let char = inde = 0;
@@ -54,6 +55,15 @@ function randomParagraph(){
     typingText.addEventListener("click", () => inpField.focus());
 }
 
+function backchg(){
+    ara.style.background = "red";
+}
+
+function chba(){
+    ara.style.background = "rgb(143, 57, 0)";
+}
+
+
 function initTyping(){
     const characters = typingText.querySelectorAll("span");
     let typedChar = inpField.value.split("")[charIndex];
@@ -62,7 +72,7 @@ function initTyping(){
         isTyping = true;
     }
      if(charIndex < characters.length - 1 && s > 0){
-        if(typedChar == null){
+        if(typedChar == null){g
             charIndex--;
             inde--;
             
@@ -77,7 +87,13 @@ function initTyping(){
         
             }else{
                 characters[charIndex].classList.add("incorrect");
-                mistakes++
+                mistakes++;
+                backchg()
+                if(ara.style.background = "red"){
+                    setInterval(chba, 100)
+                }else{
+                    backchg()
+                }
                 
             }
             charIndex++
