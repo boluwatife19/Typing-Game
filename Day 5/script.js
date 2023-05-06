@@ -72,7 +72,7 @@ function initTyping(){
         isTyping = true;
     }
      if(charIndex < characters.length - 1 && s > 0){
-        if(typedChar == null){g
+        if(typedChar == null){
             charIndex--;
             inde--;
             
