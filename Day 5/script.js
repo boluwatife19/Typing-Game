@@ -83,13 +83,18 @@ function initTyping(){
         }else{
             if(characters[charIndex].innerText === typedChar){
                 characters[charIndex].classList.add("correct");
-                
-        
+                ara.style.background = "green";
+                backchg()
+                if(ara.style.background = "green" ){
+                    setInterval(chba, 100)
+                }else{
+                    ara.style.background = "green"
+                }
             }else{
                 characters[charIndex].classList.add("incorrect");
                 mistakes++;
                 backchg()
-                if(ara.style.background = "red"){
+                if(ara.style.background = "red" ){
                     setInterval(chba, 100)
                 }else{
                     backchg()
